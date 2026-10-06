@@ -1,0 +1,132 @@
+* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* <coloque o link da imagem de fundo ou o caminho local da imagem aqui> */
+    background-image: url('frederick-shaw-BBa_66RmZNQ-unsplash.jpg');
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Camada escura sobre a imagem de fundo para dar destaque ao formulário */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* <coloque a cor e opacidade da camada escura de fundo aqui> */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Card central escuro */
+.card {
+    position: relative;
+    z-index: 2;
+
+    /* <coloque a largura do card aqui> */
+    width: 380px;
+    max-width: 90%;
+
+    /* <coloque a cor de fundo do formulário aqui> */
+    background-color: #551968b7;
+   
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(202, 186, 186, 0.5);
+    text-align: center;
+}
+
+/* Estilo do título */
+.card-header {
+    margin-bottom: 25px;
+}
+
+.card-header .icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-header h1 {
+    /* <coloque a cor do título aqui> */
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Agrupamento dos campos de entrada */
+.input-group {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    /* <coloque a cor dos textos dos rótulos aqui> */
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 7px;
+
+    /* <coloque a cor de fundo do campo de texto aqui> */
+    background-color: #f9f0fa;
+   
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #7d1dcc;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    /* <coloque a cor do texto de exemplo (placeholder) aqui> */
+    color: #d69ae9;
+}
+
+/* Botão Vermelho */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+   
+    /* <coloque a cor de fundo do botão aqui> */
+    background-color: #852fad;
+   
+    /* <coloque a cor do texto do botão aqui> */
+    color: #ffffff;
+   
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    /* <coloque a cor do botão ao passar o mouse por cima aqui> */
+    background-color: #d89bf0b7;
+}
